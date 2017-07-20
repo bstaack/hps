@@ -10,7 +10,7 @@ $(document).ready(function(){
 //images take up whole screen on click
   $('.materialboxed').materialbox();
   
-  
+  $('.modal').modal();
   
   
   

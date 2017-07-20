@@ -17,20 +17,20 @@
 <body>
 	<div class="navbar-fixed">
 		<nav>
-		  <div class="nav-wrapper">
+		  <div class="nav-wrapper teal lighten-1">
 		    <a href="#!" class="brand-logo">hps services</a>
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		    <ul class="right hide-on-med-and-down">
 		      <li><a href="sass.html">hair</a></li>
 		      <li><a href="badges.html">photos</a></li>
-		      <li><a href="badges.html">blog</a></li>
-		      <li><a href="badges.html">contact</a></li>
+		      <!--<li><a href="badges.html">blog</a></li>-->
+		      <li><a class="modal-trigger" href="#modal">contact</a></li>
 		    </ul>
 		    <ul class="side-nav" id="mobile-demo">
-	        <li><a href="sass.html">hair</a></li>
-	        <li><a href="badges.html">photography</a></li>
-	        <li><a href="collapsible.html">blog</a></li>
-	        <li><a href="mobile.html">contact</a></li>
+	        <li><a class="btn" href="sass.html">hair</a></li>
+	        <li><a class="btn" href="badges.html">photography</a></li>
+	        <li><a class="btn" href="collapsible.html">blog</a></li>
+	        <li><a class="btn modal-trigger" href="mobile.html">contact</a></li>
       </ul>
 		  </div>
 		</nav>
@@ -62,7 +62,7 @@
   </div>
   
   <div class="parallax-container">
-    <div class="parallax"><img src="http://i.imgur.com/35Lun7R.jpg"></div>
+    <div class="parallax"><img src="assets/images/hairbackground.jpeg"></div>
   </div>
   
   <div class="section white">
@@ -86,24 +86,41 @@
       humanitatis per seacula quarta decima et quinta decima. Eodem
       modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
       in futurum.</h5>
-    	<div class="">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
-    		<img class="materialboxed hair-photos" data-caption="some of my best work" width="350" src="assets/images/bstaack.jpg">
+    	<div class="hair-photos-div">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
+    		<img class="materialboxed hair-photos" data-caption="some of my best work" src="assets/images/bstaack.jpg">
     	</div>
     </div>
   </div>
   
- 
-  
   <div class="parallax-container">
-    <div class="parallax"><img src="http://i.imgur.com/35Lun7R.jpg"></div>
+    <div class="parallax"><img src="assets/images/photography.jpeg"></div>
+  </div>
+  
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">photography</h2>
+      <p class="grey-text text-darken-3 lighten-3">crap about my photography skillz yo</p>
+      <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+      ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+      dolor in hendrerit in vulputate velit esse molestie cait nulla facilisi.
+      Nam liber tempor cum soluta nobis eleifend option congue
+      nihil imperdiet doming id quod mazim placerat facer possim
+      assum. Typi non habent claritatem insitam; est usus legentis
+      in iis qui facit eorum claritatem. Investigationes
+      demonstraverunt lectores legere me lius quod ii legunt saepius.
+      Claritas est eti.</h5>
+    </div>
   </div>
 
 
@@ -125,11 +142,23 @@
 
 
 
+	<div id="modal" class="modal">
+    <div class="modal-content">
+      <h4>How to Contact Me</h4>
+      <p>various sites blah blah Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+      ut aliquip ex ea commodo consequat.in futurum.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 
 
 
 
-
-  
+<!--stock photos cred to pexels.com -->
 </body>
 </html>
