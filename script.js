@@ -1,18 +1,17 @@
 /*global $*/
 $(document).ready(function(){
   
+  var mapKey = config.MAP_KEY;
   var isMobile = window.matchMedia("only screen and (max-width: 1200px)");
   var hairHtml = "";
-  var hairGallery = [["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"], ["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"]];
+  var hairGallery = [["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"], 
+                    ["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"]];
   
 // backgound images scroll different speed
   $('.parallax').parallax();
 
 //contact modal   
   $('.modal').modal();
-
-//auto scroll depending on what section is clicked
-  $('.scrollspy').scrollSpy();
 
 //when on mobile slide out menu  
   $(".button-collapse").sideNav();
@@ -36,7 +35,8 @@ $(document).ready(function(){
     $("#hair-slides").html(hairHtml);
     let x = $("#hair-slides").width();
     $('.slider').slider(); 
-    $(".slider, #hair-slides").height(x);
+    $("#hair-slides").height(x);
+    $(".slider").height(x + 50);
   };
   
 
@@ -54,6 +54,8 @@ $(document).ready(function(){
   
   
   
+//auto scroll depending on what section is clicked
+  $('.scrollspy').scrollSpy();
 
   
 });
