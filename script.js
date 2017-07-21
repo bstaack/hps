@@ -7,6 +7,8 @@ $(document).ready(function(){
   var hairHtml = "";
   var hairGallery = [["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"], 
                     ["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"]];
+  var photoGallery = [["assets/images/hstaack.jpg", "some of my best work"], ["assets/images/hstaack.jpg", "some of my best work"], ["assets/images/hstaack.jpg", "some of my best work"]
+                      ["assets/images/hstaack.jpg", "some of my best work"], ["assets/images/hstaack.jpg", "some of my best work"], ["assets/images/hstaack.jpg", "some of my best work"]];                  
   
 // backgound images scroll different speed
   $('.parallax').parallax();
