@@ -1,5 +1,9 @@
-.brand-logo {
-    margin-left: 2em;
+@media only screen and (max-height: 800px) {
+    #parrallax {
+        height: 200px;
+    }
+    
+    
 }
 
 .material-placeholder {
