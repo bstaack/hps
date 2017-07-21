@@ -1,7 +1,8 @@
 /*global $*/
+
 $(document).ready(function(){
-  
-  var mapKey = config.MAP_KEY;
+
+  var mapKey = config.MAP_KEY;  
   var isMobile = window.matchMedia("only screen and (max-width: 1200px)");
   var hairHtml = "";
   var hairGallery = [["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"], 
@@ -9,7 +10,10 @@ $(document).ready(function(){
   
 // backgound images scroll different speed
   $('.parallax').parallax();
-
+  
+//auto scroll depending on what section is clicked
+  $('.scrollspy').scrollSpy();
+  
 //contact modal   
   $('.modal').modal();
 
@@ -39,10 +43,6 @@ $(document).ready(function(){
     $(".slider").height(x + 50);
   };
   
-
-  
-
-  
 //if on mobile put a slider for images
   if (isMobile.matches) { 
     hairPhotosSlider();
@@ -52,10 +52,22 @@ $(document).ready(function(){
   }
   
   
+  var mapHtml = "<script>function initMap() {var myLatLng = {lat: 36.344554, lng: -82.400961}; var map = new google.maps.Map(document.getElementById('map'), { center: myLatLng, scrollwheel: true, zoom: 12}); var marker = new google.maps.Marker({map: map, position: myLatLng, title: 'XOXO Salon'});}</script><script src='https://maps.googleapis.com/maps/api/js?key=" + mapKey + "&callback=initMap' async defer></script>";
+  
+  $("#mapScript").html(mapHtml);
   
   
-//auto scroll depending on what section is clicked
-  $('.scrollspy').scrollSpy();
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 });
