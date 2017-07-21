@@ -4,10 +4,10 @@ $(document).ready(function(){
 
   var mapKey = config.MAP_KEY;  
   var isMobile = window.matchMedia("only screen and (max-width: 1200px)");
-  var hairGallery = [["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"], 
-                    ["assets/images/bstaack.jpg", "some of my best work"], ["assets/images/bstaack.jpg", "heyoh"], ["assets/images/bstaack.jpg", "iasipd"]];
-  var photoGallery = [["assets/images/hstaack.jpg", "some of my best work"], ["assets/images/hstaack.jpg", "heyoh"], ["assets/images/hstaack.jpg", "iasipd"], 
-                    ["assets/images/hstaack.jpg", "some of my best work"], ["assets/images/hstaack.jpg", "heyoh"], ["assets/images/hstaack.jpg", "iasipd"]];                  
+  var hairGallery = [["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"], 
+                    ["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"]];
+  var photoGallery = [["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"], 
+                    ["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"]];                  
   
 // backgound images scroll different speed
   $('.parallax').parallax();
