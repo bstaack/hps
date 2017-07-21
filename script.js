@@ -1,8 +1,5 @@
 /*global $*/
 $(document).ready(function(){
-      
-//when on mobile have a collapsed menu 
-  $(".button-collapse").sideNav();
   
 // backgound images scroll different speed
   $('.parallax').parallax();
@@ -15,7 +12,9 @@ $(document).ready(function(){
 
 //auto scroll depending on what section is clicked
   $('.scrollspy').scrollSpy();
-  
+
+//when on mobile slide out menu  
+  $(".button-collapse").sideNav();
   
   
   
