@@ -3,7 +3,8 @@
 $(document).ready(function(){
 
   var mapKey = config.MAP_KEY;  
-  var isMobile = window.matchMedia("only screen and (max-width: 1200px)");
+  var isMobile = window.matchMedia("only screen and (max-width: 800px)");
+  
   var hairGallery = [["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"], 
                     ["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"]];
   var photoGallery = [["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"], 
@@ -25,7 +26,7 @@ $(document).ready(function(){
      html += "<img class='materialboxed hair-photos' data-caption='" + array[i][1] + "' src=" + array[i][0] + ">";
     }
     $(id).html(html);
-    $(".hair-photos").css({"width": "400px", "margin-right": ".4em"});
+    $(".hair-photos").css({"width": "350px", "margin-right": ".2em"});
       //images take up whole screen on click
     $('.materialboxed').materialbox();  
   };
@@ -37,13 +38,13 @@ $(document).ready(function(){
       html += "<li><img src=" + array[i][0] + "><div class='caption left-align'><h5 class='light grey-text text-lighten-3'>" + array[i][1] + "</h5></div></li>";
     }
     $(id).html(html);
-    // let x = $(id).width();
-    // // $(id).height(x);
-    // $(".slider").height(x);
+    $('.slider').height('600px');
     $('.slider').slider(); 
+    $('.slider').slider('start');
   };
   
 //if on mobile put a slider for images
+
   if (isMobile.matches) { 
     photoSlider(hairGallery, "#hair-slides");
     photoSlider(photoGallery, "#photo-slides");
@@ -53,6 +54,7 @@ $(document).ready(function(){
       photosGallery(photoGallery, "#photography-photos-div");
   }
   
+
   
   
   var mapHtml = "<script>function initMap() {var myLatLng = {lat: 36.344554, lng: -82.400961}; var map = new google.maps.Map(document.getElementById('map'), { center: myLatLng, scrollwheel: false, zoom: 12}); var marker = new google.maps.Marker({map: map, position: myLatLng, title: 'XOXO Salon'});}</script><script src='https://maps.googleapis.com/maps/api/js?key=" + mapKey + "&callback=initMap' async defer></script>";
