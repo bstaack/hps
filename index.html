@@ -3,7 +3,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
 	<title>hps</title>
-	<link rel="stylesheet" href="layout.css" type="text/css">
 <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import Font Awesome-->
@@ -15,6 +14,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type='text/javascript' src='config.js'></script>
+	<link rel="stylesheet" href="layout.css" type="text/css">
 </head>
 
 <body>
@@ -91,12 +91,27 @@
       modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
       in futurum.</p>
       
-    	<div id="hair-photos-div">
+    	<div id="hair-photos-div"></div>
     		<div class='slider'><ul id="hair-slides" class='slides'></div></ul>
-    	</div>
+    	
     	
     	<div id="map"></div>
     	<div id="mapScript"></div>	
+    	
+      <div class="col s12 m10 offset-m1 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="assets/images/hstaack.JPG" alt="" class="circle responsive-img">
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>    	
     	
     </div>
   </div>

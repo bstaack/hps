@@ -1,8 +1,10 @@
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 850px) {
     #mountains {
-      max-height: 200px;
-      left: 0;
-      top: 0;
+      height: 400px;
+    }
+    
+    .parallax-container{
+      height: 200px;
     }
     
     
@@ -46,3 +48,4 @@ div.gallery img {
   background-color: grey;
  }
  
+/*-------------------------------------------------------------------------------------------------------------------------------*/
