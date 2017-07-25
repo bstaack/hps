@@ -1,8 +1,7 @@
 /*global $*/
 
 $(document).ready(function(){
-
-  var mapKey = config.MAP_KEY;  
+ 
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
   var hairGallery = [["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"], 
@@ -55,10 +54,7 @@ $(document).ready(function(){
   
 
   
-  
-  var mapHtml = "<script>function initMap() {var myLatLng = {lat: 36.344554, lng: -82.400961}; var map = new google.maps.Map(document.getElementById('map'), { center: myLatLng, scrollwheel: false, zoom: 12}); var marker = new google.maps.Marker({map: map, position: myLatLng, title: 'XOXO Salon'});}</script><script src='https://maps.googleapis.com/maps/api/js?key=" + mapKey + "&callback=initMap' async defer></script>";
-  
-  $("#mapScript").html(mapHtml);
+
   
   
   
