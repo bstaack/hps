@@ -7,7 +7,8 @@ $(document).ready(function(){
   var hairGallery = [["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"], 
                     ["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"]];
   var photoGallery = [["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"], 
-                    ["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"]];                  
+                    ["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"]];   
+  var testimonials = [["assets/images/bstaack.JPG", "some of my best work"]];                  
   
 // backgound images scroll different speed
   $('.parallax').parallax();
@@ -27,7 +28,7 @@ $(document).ready(function(){
     $(id).html(html);
       //images take up whole screen on click
     $('.materialboxed').materialbox();  
-  };
+  }
 
 //populate slider with photos from the hairGallery array
   function photoSlider(array, id){
@@ -39,7 +40,7 @@ $(document).ready(function(){
     $('.slider').height('600px');
     $('.slider').slider(); 
     $('.slider').slider('start');
-  };
+  }
   
 //if on mobile put a slider for images
 
@@ -52,8 +53,17 @@ $(document).ready(function(){
       photosGallery(photoGallery, "#photography-photos-div");
   }
   
+//populate hair div with testimonials
+  function testimonial(){
+    var html = "";
+    for (let i = 0; i < testimonials.length; i++){
+      html += "<div class='card-panel grey lighten-5 z-depth-1'><div class='row valign-wrapper'>";
+      html += "<div class='col s2'><img src=" + testimonials[i][0]  + " class='circle responsive-img'>";
+      html += "</div><div class='col s10'><span class='black-text'>" + testimonials[i][1] + "</span></div></div></div>";
+    }
+    $("#testimony").html(html);
+  }
 
-  
 
   
   
