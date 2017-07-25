@@ -26,7 +26,6 @@ $(document).ready(function(){
      html += "<div class='gallery'><img class='materialboxed photos-gallery' data-caption='" + array[i][1] + "' src=" + array[i][0] + "></div>";
     }
     $(id).html(html);
-    // $(".hair-photos").css({"width": "350px", "margin-right": ".2em"});
       //images take up whole screen on click
     $('.materialboxed').materialbox();  
   };

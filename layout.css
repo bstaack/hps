@@ -31,9 +31,9 @@
 }
 
 div.gallery {
-    margin-left: .4em;
+    margin-left: .5em;
     float: left;
-    width: 350px;
+    width: 30%;
 }
 
 div.gallery img {
