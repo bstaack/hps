@@ -23,10 +23,10 @@ $(document).ready(function(){
   function photosGallery(array, id){
     var html = "";
     for (let i = 0; i < array.length; i++) {
-     html += "<img class='materialboxed hair-photos' data-caption='" + array[i][1] + "' src=" + array[i][0] + ">";
+     html += "<div class='gallery'><img class='materialboxed photos-gallery' data-caption='" + array[i][1] + "' src=" + array[i][0] + "></div>";
     }
     $(id).html(html);
-    $(".hair-photos").css({"width": "350px", "margin-right": ".2em"});
+    // $(".hair-photos").css({"width": "350px", "margin-right": ".2em"});
       //images take up whole screen on click
     $('.materialboxed').materialbox();  
   };

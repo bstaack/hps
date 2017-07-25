@@ -28,6 +28,17 @@
   margin-top: 4em;
 }
 
+div.gallery {
+    margin-left: .4em;
+    float: left;
+    width: 350px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
 #map {
   margin-top: 1em;
   width: 100%;
