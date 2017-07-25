@@ -12,7 +12,7 @@
 }
 
 @media only screen and (min-width: 993px) {
-  #begin {
+  .brand-logo {
     margin-left: 2em;
   }
 }
@@ -48,4 +48,7 @@ div.gallery img {
   background-color: grey;
  }
  
-/*-------------------------------------------------------------------------------------------------------------------------------*/
+#blank {
+  width: 100%;
+  height: 10%;
+} 

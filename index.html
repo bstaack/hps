@@ -5,6 +5,7 @@
 	<title>hps</title>
 <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 <!--Import Font Awesome-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 <!--Import materialize.css-->
@@ -22,7 +23,7 @@
 	<div class="navbar-fixed">
 		<nav>
 		  <div class="nav-wrapper teal lighten-1">
-		    <a href="#begin" id="begin" class="brand-logo section scrollspy">hps services</a>
+		    <a class="brand-logo" style="font-family: 'Satisfy', cursive;">hps services</a>
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		    <ul class="right hide-on-med-and-down" >
 		      <li><a href="#hair">hair</a></li>
@@ -35,9 +36,12 @@
 	
 <!--nav bar when on mobile-->
 	<ul class="side-nav" id="mobile-demo">
-    <li><a href="#hair">hair</a></li>
-    <li><a href="#photography">photography</a></li>
-    <li><a class="modal-trigger" href="#modal">contact</a></li>
+		<li id="blank"></li>
+    <li><a class="waves-effect" href="#hair">hair</a></li>
+    <li id="blank"></li>
+    <li><a class="waves-effect" href="#photography">photography</a></li>
+    <li id="blank"></li>
+    <li><a class="modal-trigger waves-effect" href="#modal">contact</a></li>
 	</ul>
 
   <div id="parrallax" class="parallax-container">
