@@ -42,15 +42,20 @@ $(document).ready(function(){
   }
   
 //if on mobile put a slider for images
-
-  if (isMobile.matches) { 
-    photoSlider(hairGallery, "#hair-slides");
-    photoSlider(photoGallery, "#photo-slides");
-    } else { 
-      $(".slider").hide(); 
-      photosGallery(hairGallery, "#hair-photos-div");
-      photosGallery(photoGallery, "#photography-photos-div");
-  }
+  function galleryOrSlider() {
+    if (isMobile.matches) { 
+      photoSlider(hairGallery, "#hair-slides");
+      photoSlider(photoGallery, "#photo-slides");
+      } else { 
+        $(".slider").hide(); 
+        photosGallery(hairGallery, "#hair-photos-div");
+        photosGallery(photoGallery, "#photography-photos-div");
+    }
+  }  
+  
+  galleryOrSlider();
+  
+    
 
 
   

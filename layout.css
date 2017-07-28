@@ -32,7 +32,6 @@
 
 div.gallery {
   margin-left: .5em;
-  /*float: left;*/
   display: inline-block;
   width: 30%;
 }
@@ -55,4 +54,9 @@ div.gallery img {
 
 .quotes {
   padding-top: 4em;
+}
+
+#testimonys {
+  margin: 2em 0 2em 0;
+  padding: 2em 0 2em 0;
 }
