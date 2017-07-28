@@ -4,8 +4,9 @@ $(document).ready(function(){
  
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
-  var hairGallery = [["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"], 
-                    ["assets/images/bstaack.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"]];
+  var hairGallery = [["assets/images/hair/DSC_0210.JPG", "some of my best work"], ["assets/images/hair/DSC_0215.JPG", "heyoh"], ["assets/images/hair/DSC_0251.JPG", "iasipd"], 
+                    ["assets/images/hair/DSC_0307.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"]];
+                    
   var photoGallery = [["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"], 
                     ["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"]];
   
