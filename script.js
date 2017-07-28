@@ -24,8 +24,8 @@ $(document).ready(function(){
     for (let i = 0; i < array.length; i++) {
      html += "<div class='gallery'><img class='materialboxed photos-gallery' data-caption='" + array[i][1] + "' src=" + array[i][0] + "></div>";
     }
-    $(id).html(html);
-      //images take up whole screen on click
+    $(id).append(html);
+    //images take up whole screen on click
     $('.materialboxed').materialbox();  
   }
 
