@@ -60,7 +60,7 @@ div.gallery img {
 #map {
   margin-top: 1em;
   width: 100%;
-  height: 600px;
+  height: 30em;
  }
  
 #blank {
@@ -78,5 +78,5 @@ div.gallery img {
 }
 
 #nav-btn {
-  margin: 1em;
+  left: 45%;
 }

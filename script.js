@@ -1,6 +1,7 @@
 /*global $*/
 /*global navigator*/
 /*global bounds*/
+/*global google*/ 
 
 $(document).ready(function(){
 
@@ -59,6 +60,22 @@ $(document).ready(function(){
   // }  
   
   // galleryOrSlider();
+
+  function initMap() {
+  			    var xoxo = {lat: 36.346172, lng: -82.400420};
+  			    var map = new google.maps.Map(document.getElementById('map'), {
+  			      zoom: 13,
+  			      scrollwheel: false,
+  			      mapTypeControl: true,
+  			      center: xoxo
+  			    });
+  			    var marker = new google.maps.Marker({
+  			      position: xoxo,
+  			      map: map
+  			    });
+  			  }
+  			  
+  initMap();			  
 
 //when clicked changes the map to view driving directions 
   $("#nav-btn").click(function(){
