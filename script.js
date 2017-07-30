@@ -9,8 +9,10 @@ $(document).ready(function(){
  
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
-  var hairGallery = [["assets/images/hair/DSC_0210.JPG", "some of my best work"], ["assets/images/hair/DSC_0215.JPG", "heyoh"], ["assets/images/hair/DSC_0251.JPG", "iasipd"], 
-                    ["assets/images/hair/DSC_0307.JPG", "some of my best work"], ["assets/images/bstaack.JPG", "heyoh"], ["assets/images/bstaack.JPG", "iasipd"]];
+  var hairGallery = [ ["assets/images/hair/baly.jpg"], ["assets/images/hair/blonde.jpg"], ["assets/images/hair/DSC_0210.JPG"], ["assets/images/hair/DSC_0215.JPG"], 
+                      ["assets/images/hair/DSC_0251.JPG"], ["assets/images/hair/DSC_0307.JPG"], ["assets/images/hair/fashion.jpg"], ["assets/images/hair/gold.jpg"],
+                      ["assets/images/hair/red.jpg"],
+                      ];
                     
   var photoGallery = [["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"], 
                     ["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"]];
@@ -42,9 +44,8 @@ $(document).ready(function(){
       html += "<li><img src=" + array[i][0] + "><div class='caption left-align'><h5 class='light grey-text text-lighten-3'>" + array[i][1] + "</h5></div></li>";
     }
     $(id).html(html);
-    $('.slider').height('600px');
-    $('.slider').slider(); 
-    $('.slider').slider('start');
+    $('.slider').height('800px');
+    $('.slider').slider();
   }
   
 //if on mobile put a slider for images
