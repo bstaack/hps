@@ -129,10 +129,25 @@
     </div>
     
     <div class="nav">
-    	<a id="nav-btn" class="btn-floating btn-large waves-effect waves-light cyan accent-4 tooltipped" data-position="left" data-delay="50" data-tooltip="directions from your location"><i class="material-icons left">navigation</i></a>
+    	<a id="nav-btn" class="btn-floating btn-large waves-effect waves-light cyan accent-4 tooltipped" data-position="top" data-delay="50" data-tooltip="directions from your location"><i class="material-icons left">navigation</i></a>
      </div> 
       
       <div id="map"></div>
+      <script>
+    	  function initMap() {
+			    var xoxo = {lat: 36.346172, lng: -82.400420};
+			    var map = new google.maps.Map(document.getElementById('map'), {
+			      zoom: 13,
+			      scrollwheel: false,
+			      mapTypeControl: true,
+			      center: xoxo
+			    });
+			    var marker = new google.maps.Marker({
+			      position: xoxo,
+			      map: map
+			    });
+			  }
+      </script>
 	    <script async defer
 	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEeWnvxgY1AjEJ1lIpuuQ4uq43sOU0R_k&callback=initMap">
 	    </script>
