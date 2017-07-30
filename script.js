@@ -12,9 +12,9 @@ $(document).ready(function(){
                       ["assets/images/hair/fashion.jpg", ""], ["assets/images/hair/blonde.jpg", ""], ["assets/images/hair/red.jpg", ""],
                       ];
                     
-  var photoGallery = [ ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], 
-                       ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], 
-                       ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], ];
+  var photoGallery = [ ["assets/images/photography/13528122_1023581917717854_6264839673630315940_o.jpg", ""], ["assets/images/photography/DSC_0007-2.JPG", ""], ["assets/images/photography/DSC_0161.jpg", ""], 
+                       ["assets/images/photography/DSC_0214.JPG", ""], ["assets/images/photography/DSC_0313.jpg", ""], ["assets/images/photography/DSC_0466.JPG", ""], 
+                       ["assets/images/photography/DSC_0615.JPG", ""], ["assets/images/photography/DSC_0814.JPG", ""], ["assets/images/photography/DSC_0501.JPG", ""], ];
   
 // backgound images scroll different speed
   $('.parallax').parallax();
