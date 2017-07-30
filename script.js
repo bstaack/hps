@@ -9,13 +9,14 @@ $(document).ready(function(){
  
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
-  var hairGallery = [ ["assets/images/hair/baly.jpg"], ["assets/images/hair/blonde.jpg"], ["assets/images/hair/DSC_0210.JPG"], ["assets/images/hair/DSC_0215.JPG"], 
-                      ["assets/images/hair/DSC_0251.JPG"], ["assets/images/hair/DSC_0307.JPG"], ["assets/images/hair/fashion.jpg"], ["assets/images/hair/gold.jpg"],
-                      ["assets/images/hair/red.jpg"],
+  var hairGallery = [ ["assets/images/hair/DSC_0251.JPG", ""], ["assets/images/hair/gold.jpg", ""], ["assets/images/hair/DSC_0210.JPG", ""], 
+                      ["assets/images/hair/DSC_0215.JPG", ""], ["assets/images/hair/baly.jpg", ""], ["assets/images/hair/DSC_0307.JPG", ""], 
+                      ["assets/images/hair/fashion.jpg", ""], ["assets/images/hair/blonde.jpg", ""], ["assets/images/hair/red.jpg", ""],
                       ];
                     
-  var photoGallery = [["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"], 
-                    ["assets/images/hstaack.JPG", "some of my best work"], ["assets/images/hstaack.JPG", "heyoh"], ["assets/images/hstaack.JPG", "iasipd"]];
+  var photoGallery = [ ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], 
+                       ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], 
+                       ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], ["assets/images/hstaack.JPG", ""], ];
   
 // backgound images scroll different speed
   $('.parallax').parallax();
@@ -26,7 +27,7 @@ $(document).ready(function(){
 //when on mobile slide out menu  
   $(".button-collapse").sideNav();
 
-//populate gallery with photos from the hairGallery array  
+//populate gallery with photos from the array  
   function photosGallery(array, id){
     var html = "";
     for (let i = 0; i < array.length; i++) {
@@ -37,30 +38,30 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();  
   }
 
-//populate slider with photos from the hairGallery array
+//populate slider with photos from the array
   function photoSlider(array, id){
     var html = "";
     for (let i = 0; i < array.length; i++) {
-      html += "<li><img src=" + array[i][0] + "><div class='caption left-align'><h5 class='light grey-text text-lighten-3'>" + array[i][1] + "</h5></div></li>";
+      html += "<a class='carousel-item'><img src=" + array[i][0] + "></a>";
     }
-    $(id).html(html);
-    $('.slider').height('800px');
-    $('.slider').slider();
+    $(id).append(html);
   }
   
 //if on mobile put a slider for images
-  function galleryOrSlider() {
-    if (isMobile.matches) { 
+  // function galleryOrSlider() {
+    // if (isMobile.matches) { 
       photoSlider(hairGallery, "#hair-slides");
       photoSlider(photoGallery, "#photo-slides");
-      } else { 
+      $('.carousel').carousel();
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+      // } else { 
         $(".slider").hide(); 
         photosGallery(hairGallery, "#hair-photos-div");
         photosGallery(photoGallery, "#photography-photos-div");
-    }
-  }  
+  //   }
+  // }  
   
-  galleryOrSlider();
+  // galleryOrSlider();
 
   
   function initMap() {

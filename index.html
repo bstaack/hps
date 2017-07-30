@@ -14,7 +14,6 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	<script type='text/javascript' src='config.js'></script>
 	<link rel="stylesheet" href="layout.css" type="text/css">
 </head>
 
@@ -65,17 +64,16 @@
   <div id="hair" class="section white section scrollspy">
     <div class="row container">
       <h2 class="header">hair</h2>
-      <h5 class="grey-text text-darken-3 lighten-3">this talks about cosmetology career</h5>
+      <h5 class="grey-text text-darken-3 lighten-3">"let me make you feel as beautiful on the outside to reflect your inside"</h5>
       <p class="flow-text">I've been a licensed cosmetologist for over 3 years. I started my career in SW Florida, and recently 
       relocated to East Tennessee. I'm a "do it all" stylist, but I specialize in bayalage, highlights, and fashion colors (the 
       crazy, bright ones!). I keep up to date on all styles and colors through classes, hair shows, and such. </p>
       
-    	<div class="col s12" id="hair-photos-div">
-    		<div class='slider'><ul id="hair-slides" class='slides'></div></ul>
+    	<div class="col s12">
+    		<div id="hair-photos-div"></div>
+    		<div class="carousel carousel-slider center" id="hair-slides" data-indicators="true"></div>
     	</div>
 
-      <div id="testimony"></div>
-      
 	     <div clas="row">
 	      <table class="highlight col s12 m8 l6">
 	        <thead>
@@ -128,7 +126,7 @@
 	      </div>
 	    </div>
       
-      <div class="col s1 push-s5">
+      <div class="col s1 push-s4 push-l5">
       	<a id="nav-btn" class="btn-floating btn-large waves-effect waves-light cyan accent-4 tooltipped" data-position="left" data-delay="50" data-tooltip="directions from your location"><i class="material-icons left">navigation</i></a>
       </div>
       
@@ -193,13 +191,14 @@
   <div id="photography" class="section white section scrollspy">
     <div class="row container">
       <h2 class="header">photography</h2>
-      <h5 class="grey-text text-darken-3 lighten-3">crap about my photography skillz yo</h5>
+      <h5 class="grey-text text-darken-3 lighten-3">since 2012</h5>
       <p class="flow-text">I am also a photographer and have been freelancing for over 6 years. I photograph weddings, engagements, 
       family sessions, maternity, musicians, and have helped add to modeling portfolios for women who went on to model. I enjoy 
       capturing special moments for people to relive the rest of their lives.</p>
       
-      <div id="photography-photos-div">
-    		<div class='slider'><ul id="photo-slides" class='slides'></div></ul>
+      <div class="col s12">
+	      <div id="photography-photos-div"></div>
+    		<div class="carousel carousel-slider center" id="photo-slides" data-indicators="true"></div>
     	</div>
     	
     </div>

@@ -6,8 +6,7 @@
     .parallax-container{
       height: 200px;
     }
-    
-    
+
     
 }
 
@@ -17,6 +16,27 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  
+  #hair-photos-div, #photography-photos-div {
+    display: none;
+  }
+
+  
+}  
+
+@media only screen and (min-width: 801px) {
+  
+  .carousel {
+    display: none;
+  }
+
+  
+}
+  
+  
+
+
 
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -24,10 +44,6 @@
 
 .material-placeholder {
   display: inline-block;
-}
-
-#hair-photos-div {
-  margin-top: 4em;
 }
 
 div.gallery {
