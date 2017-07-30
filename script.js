@@ -1,9 +1,8 @@
 /*global $*/
-
-// need to change something for git
+/*global navigator*/
+/*global bounds*/
 
 $(document).ready(function(){
-  
 
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
@@ -61,8 +60,6 @@ $(document).ready(function(){
   
   // galleryOrSlider();
 
-
-  
 //when clicked changes the map to view driving directions 
   $("#nav-btn").click(function(){
     var map, infoWindow;
