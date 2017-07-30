@@ -1,12 +1,10 @@
 /*global $*/
-/*global navigator*/
-/*global google*/
-/*global bounds*/
 
-
+// need to change something for git
 
 $(document).ready(function(){
- 
+  
+
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
   var hairGallery = [ ["assets/images/hair/DSC_0251.JPG", ""], ["assets/images/hair/gold.jpg", ""], ["assets/images/hair/DSC_0210.JPG", ""], 
@@ -63,25 +61,9 @@ $(document).ready(function(){
   
   // galleryOrSlider();
 
-  
-  function initMap() {
-    var xoxo = {lat: 36.346172, lng: -82.400420};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
-      scrollwheel: false,
-      mapTypeControl: true,
-      center: xoxo
-    });
-    var marker = new google.maps.Marker({
-      position: xoxo,
-      map: map
-    });
-  }
-  
-  initMap();
+
   
 //when clicked changes the map to view driving directions 
-
   $("#nav-btn").click(function(){
     var map, infoWindow;
       if (navigator.geolocation) { //Checks if browser supports geolocation
