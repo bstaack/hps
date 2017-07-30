@@ -1,12 +1,11 @@
 /*global $*/
 /*global navigator*/
-/*global google*/
 /*global bounds*/
 
 
 
 $(document).ready(function(){
- 
+  var google;
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
   var hairGallery = [ ["assets/images/hair/DSC_0251.JPG", ""], ["assets/images/hair/gold.jpg", ""], ["assets/images/hair/DSC_0210.JPG", ""], 
