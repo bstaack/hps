@@ -15,9 +15,11 @@ $(document).ready(function(){
                       ["assets/images/hair/hair11.png", ""], ["assets/images/hair/hair12.png", ""], ["assets/images/hair/DSC_0210.JPG", ""] 
                       ];
                     
-  var photoGallery = [ ["assets/images/photography/13528122_1023581917717854_6264839673630315940_o.jpg", ""], ["assets/images/photography/DSC_0007-2.JPG", ""], ["assets/images/photography/DSC_0161.jpg", ""], 
-                       ["assets/images/photography/DSC_0214.JPG", ""], ["assets/images/photography/DSC_0313.jpg", ""], ["assets/images/photography/DSC_0466.JPG", ""], 
-                       ["assets/images/photography/DSC_0615.JPG", ""], ["assets/images/photography/DSC_0814.JPG", ""], ["assets/images/photography/DSC_0501.JPG", ""], ];
+  var photoGallery = [ ["assets/images/photography/photo1.png", ""], ["assets/images/photography/photo2.png", ""], ["assets/images/photography/photo3.png", ""],
+                       ["assets/images/photography/photo4.png", ""], ["assets/images/photography/photo5.png", ""], ["assets/images/photography/photo6.png", ""],
+                       ["assets/images/photography/photo7.png", ""], ["assets/images/photography/photo8.png", ""], ["assets/images/photography/photo9.png", ""],
+                       ["assets/images/photography/photo10.png", ""], ["assets/images/photography/photo12.png", ""], ["assets/images/photography/photo11.png", ""]
+                      ];
   
 // backgound images scroll different speed
   $('.parallax').parallax();
