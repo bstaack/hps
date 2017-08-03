@@ -7,9 +7,12 @@ $(document).ready(function(){
 
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
-  var hairGallery = [ ["assets/images/hair/DSC_0251.JPG", ""], ["assets/images/hair/gold.jpg", ""], ["assets/images/hair/DSC_0210.JPG", ""], 
-                      ["assets/images/hair/DSC_0215.JPG", ""], ["assets/images/hair/baly.jpg", ""], ["assets/images/hair/DSC_0307.JPG", ""], 
-                      ["assets/images/hair/fashion.jpg", ""], ["assets/images/hair/blonde.jpg", ""], ["assets/images/hair/red.jpg", ""],
+  var hairGallery = [ ["assets/images/hair/hair5.png", ""], ["assets/images/hair/hair9.png", ""], ["assets/images/hair/ryan.png", ""], 
+                      ["assets/images/hair/DSC_0215.JPG", ""], ["assets/images/hair/hair2.png", ""], ["assets/images/hair/DSC_0307.JPG", ""], 
+                      ["assets/images/hair/DSC_0251.JPG", ""], ["assets/images/hair/blonde.jpg", ""], ["assets/images/hair/hair1.jpg", ""],
+                      ["assets/images/hair/hair3.png", ""], ["assets/images/hair/hair4.png", ""], ["assets/images/hair/hair6.png", ""], 
+                      ["assets/images/hair/hair7.png", ""], ["assets/images/hair/hair8.png", ""],  ["assets/images/hair/hair10.png", ""], 
+                      ["assets/images/hair/hair11.png", ""], ["assets/images/hair/hair12.png", ""], ["assets/images/hair/DSC_0210.JPG", ""] 
                       ];
                     
   var photoGallery = [ ["assets/images/photography/13528122_1023581917717854_6264839673630315940_o.jpg", ""], ["assets/images/photography/DSC_0007-2.JPG", ""], ["assets/images/photography/DSC_0161.jpg", ""], 
