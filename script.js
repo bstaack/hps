@@ -7,10 +7,10 @@ $(document).ready(function(){
 
   var isMobile = window.matchMedia("only screen and (max-width: 800px)");
   
-  var hairGallery = [ ["assets/images/hair/hair5.png", ""], ["assets/images/hair/hair9.png", ""], ["assets/images/hair/ryan.png", ""], 
-                      ["assets/images/hair/DSC_0215.JPG", ""], ["assets/images/hair/hair2.png", ""], ["assets/images/hair/DSC_0307.JPG", ""], 
+  var hairGallery = [ ["assets/images/hair/hair5.png", ""], ["assets/images/hair/hair9.png", ""], ["assets/images/hair/DSC_0215.JPG", ""], 
+                      ["assets/images/hair/ryan.png", ""], ["assets/images/hair/hair2.png", ""], ["assets/images/hair/hair3.png", ""], 
                       ["assets/images/hair/DSC_0251.JPG", ""], ["assets/images/hair/blonde.jpg", ""], ["assets/images/hair/hair1.jpg", ""],
-                      ["assets/images/hair/hair3.png", ""], ["assets/images/hair/hair4.png", ""], ["assets/images/hair/hair6.png", ""], 
+                      ["assets/images/hair/DSC_0307.JPG", ""], ["assets/images/hair/hair4.png", ""], ["assets/images/hair/hair6.png", ""], 
                       ["assets/images/hair/hair7.png", ""], ["assets/images/hair/hair8.png", ""],  ["assets/images/hair/hair10.png", ""], 
                       ["assets/images/hair/hair11.png", ""], ["assets/images/hair/hair12.png", ""], ["assets/images/hair/DSC_0210.JPG", ""] 
                       ];
