@@ -18,9 +18,6 @@
   #hair-photos-div, #photography-photos-div {
     display: none;
   }
-  .carousel {
-    display: inline;
-  }
 
 
 }
@@ -29,9 +26,6 @@
 
   .carousel {
     display: none;
-  }
-  #hair-photos-div, #photography-photos-div {
-    display: inline;
   }
 
 
