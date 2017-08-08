@@ -1,36 +1,34 @@
 /*global $*/
 /*global navigator*/
 /*global bounds*/
-/*global google*/ 
+/*global google*/
 
 $(document).ready(function(){
 
-  var isMobile = window.matchMedia("only screen and (max-width: 800px)");
-  
-  var hairGallery = [ ["assets/images/hair/hair5.png", ""], ["assets/images/hair/hair9.png", ""], ["assets/images/hair/DSC_0215.JPG", ""], 
-                      ["assets/images/hair/ryan.png", ""], ["assets/images/hair/hair2.png", ""], ["assets/images/hair/hair3.png", ""], 
+  var hairGallery = [ ["assets/images/hair/hair5.png", ""], ["assets/images/hair/hair9.png", ""], ["assets/images/hair/DSC_0215.JPG", ""],
+                      ["assets/images/hair/ryan.png", ""], ["assets/images/hair/hair2.png", ""], ["assets/images/hair/hair3.png", ""],
                       ["assets/images/hair/DSC_0251.JPG", ""], ["assets/images/hair/blonde.jpg", ""], ["assets/images/hair/hair1.jpg", ""],
-                      ["assets/images/hair/DSC_0307.JPG", ""], ["assets/images/hair/hair4.png", ""], ["assets/images/hair/hair6.png", ""], 
-                      ["assets/images/hair/hair7.png", ""], ["assets/images/hair/hair8.png", ""],  ["assets/images/hair/hair10.png", ""], 
-                      ["assets/images/hair/hair11.png", ""], ["assets/images/hair/hair12.png", ""], ["assets/images/hair/DSC_0210.JPG", ""] 
+                      ["assets/images/hair/DSC_0307.JPG", ""], ["assets/images/hair/hair4.png", ""], ["assets/images/hair/hair6.png", ""],
+                      ["assets/images/hair/hair7.png", ""], ["assets/images/hair/hair8.png", ""],  ["assets/images/hair/hair10.png", ""],
+                      ["assets/images/hair/hair11.png", ""], ["assets/images/hair/hair12.png", ""], ["assets/images/hair/DSC_0210.JPG", ""]
                       ];
-                    
+
   var photoGallery = [ ["assets/images/photography/photo1.png", ""], ["assets/images/photography/photo2.png", ""], ["assets/images/photography/photo3.png", ""],
                        ["assets/images/photography/photo4.png", ""], ["assets/images/photography/photo5.png", ""], ["assets/images/photography/photo6.png", ""],
                        ["assets/images/photography/photo7.png", ""], ["assets/images/photography/photo8.png", ""], ["assets/images/photography/photo9.png", ""],
                        ["assets/images/photography/photo10.png", ""], ["assets/images/photography/photo12.png", ""], ["assets/images/photography/photo11.png", ""]
                       ];
-  
+
 // backgound images scroll different speed
   $('.parallax').parallax();
 //auto scroll depending on what section is clicked
   $('.scrollspy').scrollSpy();
-//contact modal   
+//contact modal
   $('.modal').modal();
-//when on mobile slide out menu  
+//when on mobile slide out menu
   $(".button-collapse").sideNav();
 
-//populate gallery with photos from the array  
+//populate gallery with photos from the array
   function photosGallery(array, id){
     var html = "";
     for (let i = 0; i < array.length; i++) {
@@ -38,7 +36,7 @@ $(document).ready(function(){
     }
     $(id).append(html);
     //images take up whole screen on click
-    $('.materialboxed').materialbox();  
+    $('.materialboxed').materialbox();
   }
 
 //populate slider with photos from the array
@@ -49,24 +47,15 @@ $(document).ready(function(){
     }
     $(id).append(html);
   }
-  
-//if on mobile put a slider for images
-  // function galleryOrSlider() {
-    // if (isMobile.matches) { 
-      photoSlider(hairGallery, "#hair-slides");
-      photoSlider(photoGallery, "#photo-slides");
-      $('.carousel').carousel();
-      $('.carousel.carousel-slider').carousel({fullWidth: true});
-      // } else { 
-        $(".slider").hide(); 
-        photosGallery(hairGallery, "#hair-photos-div");
-        photosGallery(photoGallery, "#photography-photos-div");
-  //   }
-  // }  
-  
-  // galleryOrSlider();
-  			  
-//when clicked changes the map to view driving directions 
+
+  photoSlider(hairGallery, "#hair-slides");
+  photoSlider(photoGallery, "#photo-slides");
+  $('.carousel').carousel();
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
+  photosGallery(hairGallery, "#hair-photos-div");
+  photosGallery(photoGallery, "#photography-photos-div");
+
+//when clicked changes the map to view driving directions
   $("#nav-btn").click(function(){
     var map, infoWindow;
       if (navigator.geolocation) { //Checks if browser supports geolocation
@@ -76,7 +65,7 @@ $(document).ready(function(){
 		     var coords = new google.maps.LatLng(latitude, longitude); //Creates variable for map coordinates
 		     var directionsService = new google.maps.DirectionsService();
 		     var directionsDisplay = new google.maps.DirectionsRenderer();
-		     var mapOptions = 
+		     var mapOptions =
 									     {
 									       zoom: 15,  //Sets zoom level (0-21)
 									       scrollwheel: false,
@@ -88,7 +77,7 @@ $(document).ready(function(){
 									       },
 									       mapTypeId: google.maps.MapTypeId.ROADMAP //sets type of map Options:ROADMAP, SATELLITE, HYBRID, TERRIAN
 									     };
-									     
+
 		     map = new google.maps.Map(document.getElementById("map"), mapOptions /*Creates a new map using the passed optional parameters in the mapOptions parameter.*/);
 		     directionsDisplay.setMap(map);
 		     directionsDisplay.setPanel(document.getElementById('panel'));
@@ -97,7 +86,7 @@ $(document).ready(function(){
 		       destination: '36.346172, -82.400420',
 		       travelMode: google.maps.DirectionsTravelMode.DRIVING
 		     };
-		
+
 		     directionsService.route(request, function (response, status) {
 		       if (status == google.maps.DirectionsStatus.OK) {
 		         directionsDisplay.setDirections(response);
@@ -105,33 +94,33 @@ $(document).ready(function(){
 		     });
 		   });
 			}
-			
+
 			 google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
 			  this.setZoom(map.getZoom()-1);
-			
+
 			  if (this.getZoom() > 15) {
 			    this.setZoom(15);
 				  }
 				});
 				map.fitBounds(bounds);
 
-  });  
-   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

@@ -2,12 +2,9 @@
     #mountains {
       height: 600px;
     }
-
     .parallax-container{
       height: 200px;
     }
-
-
 }
 
 @media only screen and (min-width: 993px) {
@@ -21,6 +18,9 @@
   #hair-photos-div, #photography-photos-div {
     display: none;
   }
+  .carousel {
+    display: inline;
+  }
 
 
 }
@@ -29,6 +29,9 @@
 
   .carousel {
     display: none;
+  }
+  #hair-photos-div, #photography-photos-div {
+    display: inline;
   }
 
 
