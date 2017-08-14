@@ -35,7 +35,7 @@ $(document).ready(function(){
      html += "<div class='gallery'><img class='materialboxed photos-gallery' data-caption='" + array[i][1] + "' src=" + array[i][0] + "></div>";
     }
     $(id).append(html);
-    //images take up whole screen on click
+//images take up whole screen on click
     $('.materialboxed').materialbox();
   }
 
@@ -43,15 +43,14 @@ $(document).ready(function(){
   function photoSlider(array, id){
     var html = "";
     for (let i = 0; i < array.length; i++) {
-      html += "<a class='carousel-item'><img src=" + array[i][0] + "></a>";
+      html += "<li><img src=" + array[i][0] + "></li>";
     }
     $(id).append(html);
   }
 
   photoSlider(hairGallery, "#hair-slides");
   photoSlider(photoGallery, "#photo-slides");
-  $('.carousel').carousel();
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
+  
   photosGallery(hairGallery, "#hair-photos-div");
   photosGallery(photoGallery, "#photography-photos-div");
 
