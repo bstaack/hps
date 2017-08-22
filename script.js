@@ -50,7 +50,7 @@ $(document).ready(function(){
 
   photoSlider(hairGallery, "#hair-slides");
   photoSlider(photoGallery, "#photo-slides");
-  
+
   photosGallery(hairGallery, "#hair-photos-div");
   photosGallery(photoGallery, "#photography-photos-div");
 
@@ -82,7 +82,7 @@ $(document).ready(function(){
 		     directionsDisplay.setPanel(document.getElementById('panel'));
 		     var request = {
 		       origin: coords,
-		       destination: '36.346172, -82.400420',
+		       destination: '36.350490, -82.382084',
 		       travelMode: google.maps.DirectionsTravelMode.DRIVING
 		     };
 
