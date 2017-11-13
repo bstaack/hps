@@ -18,6 +18,12 @@ form { max-width:420px; margin:50px auto; }
   outline:0;
 }
 
+#hpslogo {
+  padding-left: 6em;
+  width: 75%;
+  height: auto;
+}
+
 .feedback-input:focus { border:2px solid #00838f; }
 
 textarea {
