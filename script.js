@@ -27,6 +27,8 @@ $(document).ready(function(){
   $('.modal').modal();
 //when on mobile slide out menu
   $(".button-collapse").sideNav();
+// blog posts
+  $('.collapsible').collapsible();  
 
 //populate gallery with photos from the array
   function photosGallery(array, id){
