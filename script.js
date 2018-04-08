@@ -5,12 +5,12 @@
 
 $(document).ready(function(){
 
-  var hairGallery = [ ["assets/images/hair/hair5.png", ""], ["assets/images/hair/hair9.png", ""], ["assets/images/hair/DSC_0215.JPG", ""],
-                      ["assets/images/hair/ryan.png", ""], ["assets/images/hair/hair2.png", ""], ["assets/images/hair/hair3.png", ""],
-                      ["assets/images/hair/DSC_0251.JPG", ""], ["assets/images/hair/blonde.jpg", ""], ["assets/images/hair/hair1.jpg", ""],
-                      ["assets/images/hair/DSC_0307.JPG", ""], ["assets/images/hair/hair4.png", ""], ["assets/images/hair/hair6.png", ""],
-                      ["assets/images/hair/hair7.png", ""], ["assets/images/hair/hair8.png", ""],  ["assets/images/hair/hair10.png", ""],
-                      ["assets/images/hair/hair11.png", ""], ["assets/images/hair/hair12.png", ""], ["assets/images/hair/DSC_0210.JPG", ""]
+  var hairGallery = [ ["assets/images/hair/hair1.jpg", ""], ["assets/images/hair/hair2.jpg", ""], ["assets/images/hair/hair3.jpg", ""],
+                      ["assets/images/hair/hair4.jpg", ""], ["assets/images/hair/hair5.jpg", ""], ["assets/images/hair/hair6.jpg", ""],
+                      ["assets/images/hair/hair7.jpg", ""], ["assets/images/hair/hair8.jpg", ""], ["assets/images/hair/hair9.jpg", ""],
+                      ["assets/images/hair/hair10.jpg", ""], ["assets/images/hair/hair11.jpg", ""], ["assets/images/hair/hair12.jpg", ""],
+                      ["assets/images/hair/hair13.jpg", ""], ["assets/images/hair/hair14.jpg", ""], ["assets/images/hair/hair15.jpg", ""],
+                      ["assets/images/hair/hair16.jpg", ""], ["assets/images/hair/hair17.jpg", ""], ["assets/images/hair/hair18.jpg", ""]
                       ];
 
   var photoGallery = [ ["assets/images/photography/photo1.png", ""], ["assets/images/photography/photo2.png", ""], ["assets/images/photography/photo3.png", ""],
@@ -28,7 +28,7 @@ $(document).ready(function(){
 //when on mobile slide out menu
   $(".button-collapse").sideNav();
 // blog posts
-  $('.collapsible').collapsible();  
+  $('.collapsible').collapsible();
 
 //populate gallery with photos from the array
   function photosGallery(array, id){
