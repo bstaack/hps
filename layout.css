@@ -22,7 +22,7 @@ form { max-width:420px; margin:50px auto; }
   padding-top: 4em;
 }
 
-#date {
+.date {
   float: right;
   padding: 1em 1em 0 0;
 }
