@@ -84,7 +84,7 @@ $(document).ready(function(){
 		     directionsDisplay.setPanel(document.getElementById('panel'));
 		     var request = {
 		       origin: coords,
-		       destination: '36.350490, -82.382084',
+		       destination: '36.316466, -82.352621',
 		       travelMode: google.maps.DirectionsTravelMode.DRIVING
 		     };
 
