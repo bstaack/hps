@@ -37,7 +37,8 @@
 		    <a class="brand-logo" style="font-family: 'Satisfy', cursive;">hps services</a>
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		    <ul class="right hide-on-med-and-down" >
-		      <li><a href="#hair">hair</a></li>
+			  <li><a href="#hair">hair</a></li>
+			  <li><a href="#onlineBooking">online booking</a></li>
 		      <li><a href="#photography">photography</a></li>
 					<li><a href="blog.html">blog</a></li>
 		      <li><a class="modal-trigger" href="#modal">contact</a></li>
@@ -49,7 +50,9 @@
 <!--nav bar when on mobile-->
 	<ul class="side-nav" id="mobile-demo">
 		<li id="blank"></li>
-    <li><a class="waves-effect" href="#hair">hair</a></li>
+	<li><a class="waves-effect" href="#hair">hair</a></li>
+	<li id="blank"></li>
+	<li><a class="waves-effect" href="#onlineBooking">online booking</a></li>
     <li id="blank"></li>
     <li><a class="waves-effect" href="#photography">photography</a></li>
     <li id="blank"></li>
@@ -166,7 +169,10 @@
 	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEeWnvxgY1AjEJ1lIpuuQ4uq43sOU0R_k&callback=initMap">
 	    </script>
 
-
+		<div id="onlineBooking" class="row container">
+			<h4>Now Offering Online Booking!</h4>
+			<!-- Start Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/v9k6tcv3b30ur9/JM0QYKDV5BW3G.js'></script><!-- End Square Appointments EmbedCode -->
+		</div>
 
 
 		<div id="testimonys" class="row">
@@ -243,9 +249,9 @@
 	</div>
 
 	<form name="contact" method="POST" id="contact-form" netlify>
-		<input name="name" type="text" class="feedback-input" placeholder="Name" name="fname" required />
+		<input name="name" type="text" class="feedback-input" placeholder="Name" required />
 		<input name="email" type="email" class="feedback-input" placeholder="Email" />
-		<textarea name="text" class="feedback-input" placeholder="Comment" name="fname" required></textarea>
+		<textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
 		<button type="submit" value="submit" id="submit-btn">SUBMIT</button>
 	</form>
 
