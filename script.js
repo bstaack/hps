@@ -5,6 +5,11 @@
 
 $(document).ready(function(){
 
+  $('#submit-btn').on('click', function(){
+    $('#contact-form').submit();
+    $('#contact-form').html('<div class="row"><p class="flow-text">Thank you, I will get in touch with you soon!</p></div>');
+  });
+
   var hairGallery = [ ["assets/images/hair/hair1.jpg", ""], ["assets/images/hair/hair2.jpg", ""], ["assets/images/hair/hair3.jpg", ""],
                       ["assets/images/hair/hair4.jpg", ""], ["assets/images/hair/hair5.jpg", ""], ["assets/images/hair/hair6.jpg", ""],
                       ["assets/images/hair/hair7.jpg", ""], ["assets/images/hair/hair8.jpg", ""], ["assets/images/hair/hair9.jpg", ""],
