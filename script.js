@@ -3,7 +3,16 @@
 /*global bounds*/
 /*global google*/
 
-$(document).ready(function(){
+$(document).ready(function() {
+
+  $('#contact-form').submit(function(e) {
+    e.preventDefault();
+    var $form = $(this);
+    $.post($form.attr('action'), $form.serialize()).then(function() {
+      $('.form-container').hide('slow');
+      $('.thank-you').show('slow');
+    });
+  });
 
   var hairGallery = [ ["assets/images/hair/hair1.jpg", ""], ["assets/images/hair/hair2.jpg", ""], ["assets/images/hair/hair3.jpg", ""],
                       ["assets/images/hair/hair4.jpg", ""], ["assets/images/hair/hair5.jpg", ""], ["assets/images/hair/hair6.jpg", ""],

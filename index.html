@@ -248,13 +248,23 @@
 		</div>
 	</div>
 
-	<form name="contact" method="POST" id="contact-form" netlify-honeypot="phone" netlify>
-		<input name="phone" type="hidden" />
-		<input name="name" type="text" class="feedback-input" placeholder="Name" required />
-		<input name="email" type="email" class="feedback-input" placeholder="Email" required />
-		<textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
-		<button type="submit" value="submit">SUBMIT</button>
-	</form>
+	<div class="form-container">
+		<form name="contact" method="POST" id="contact-form" netlify-honeypot="phone" netlify>
+			<input name="phone" type="hidden" />
+			<input name="name" type="text" class="feedback-input" placeholder="Name" required />
+			<input name="email" type="email" class="feedback-input" placeholder="Email" required />
+			<textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+			<button type="submit" value="submit">SUBMIT</button>
+		</form>
+	</div>
+
+	<div class="row thank-you" style="display:none;">
+		<div class="col s12 l4 offset-l4">
+			<p class="flow-text">
+				Thank You! We will be in touch soon!
+			</p>
+		</div>
+	</div>
 
 
 	<div id="modal" class="modal">
