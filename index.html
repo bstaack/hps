@@ -37,10 +37,7 @@
 		    <a class="brand-logo" style="font-family: 'Satisfy', cursive;">hps services</a>
 		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		    <ul class="right hide-on-med-and-down" >
-			  <li><a href="#hair">hair</a></li>
-			  <li><a href="#onlineBooking">online booking</a></li>
 		      <li><a href="#photography">photography</a></li>
-					<li><a href="blog.html">blog</a></li>
 		      <li><a class="modal-trigger" href="#modal">contact</a></li>
 		    </ul>
 		  </div>
@@ -50,14 +47,7 @@
 <!--nav bar when on mobile-->
 	<ul class="side-nav" id="mobile-demo">
 		<li id="blank"></li>
-	<li><a class="waves-effect" href="#hair">hair</a></li>
-	<li id="blank"></li>
-	<li><a class="waves-effect" href="#onlineBooking">online booking</a></li>
-    <li id="blank"></li>
     <li><a class="waves-effect" href="#photography">photography</a></li>
-    <li id="blank"></li>
-		<li><a class="waves-effect" href="blog.html">blog</a></li>
-    <li id="blank"></li>
     <li><a class="modal-trigger waves-effect" href="#modal">contact</a></li>
 	</ul>
 
@@ -76,113 +66,6 @@
   </div>
 
   <div class="parallax-container">
-    <div class="parallax"><img class="backgroundImages" src="assets/images/hairbackground.JPG"></div>
-  </div>
-
-  <div id="hair" class="section white section scrollspy">
-    <div class="row container">
-      <h2 class="header">hair services</h2>
-      <h5 class="grey-text text-darken-3 lighten-3">"I want people to feel as beautiful on the outside as they are on the inside."</h5>
-      <p class="flow-text">I've been a licensed cosmetologist since 2014. I started my career in SW Florida, and then
-      relocated to East Tennessee in late 2016. I'm a "do it all" stylist. I specialize in bayalage, highlights, and fashion colors (the
-      crazy, bright ones!). I keep up to date on all styles and colors through classes, hair shows, and staying in the know of the industry. </p>
-
-    	<div class="col s12">
-    		<div id="hair-photos-div"></div>
-			</div>
-
-		<div class="row">
-			<div class="col s12 m8 l6">
-				<h4>2022 Prices</h4>
-				<img class="materialboxed" style="max-width: 100%;" data-caption="assets/images/prices.jpg" src="assets/images/prices.jpg">
-			</div>
-
-
-	      <div class="col s12 m4 l6">
-	      	<p class="flow-text">I am currently <strong>not</strong> taking new clients. <a href="https://www.nuyulounge.com/" target="_blank"><strong>NuYu Hair Lounge</strong></a> is located in lovely Downtown Johnson City at 201 E Main St Suite 2</p>
-	      	<a href="https://goo.gl/maps/F3KHeAq9QYW897ba9" target="_blank"><img src="assets/hpsLOGO.GIF" id="hpslogo"></img></a>
-	      </div>
-	    </div>
-
-    </div>
-
-    <div class="nav">
-    	<a id="nav-btn" class="btn-floating btn-large waves-effect waves-light cyan accent-4 tooltipped" data-position="top" data-delay="50" data-tooltip="directions from your location"><i class="material-icons left">navigation</i></a>
-     </div>
-
-      <div id="map"></div>
-      <script>
-    	  function initMap() {
-			    var salon = {lat: 36.316466, lng: -82.352621};
-			    var map = new google.maps.Map(document.getElementById('map'), {
-			      zoom: 13,
-			      scrollwheel: false,
-			      mapTypeControl: true,
-			      center: salon
-			    });
-			    var marker = new google.maps.Marker({
-			      position: salon,
-			      map: map
-			    });
-			  }
-      </script>
-	    <script async defer
-	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEeWnvxgY1AjEJ1lIpuuQ4uq43sOU0R_k&callback=initMap">
-	    </script>
-
-		<div id="onlineBooking" class="row container">
-			<h4>Now Offering Online Booking!</h4>
-			<!-- Start Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/v9k6tcv3b30ur9/JM0QYKDV5BW3G.js'></script><!-- End Square Appointments EmbedCode -->
-		</div>
-
-
-		<div id="testimonys" class="row">
-      <div class="col s12 m6 l4">
-      	<div class="col s6 offset-s3 m6 offset-m2 l4 offset-l3">
-      		<img src="assets/images/caitlin.JPG" class="circle responsive-img">
-      	</div>
-
-      	<div class="col s12">
-	    		<p class="flow-text">It's not always easy to find a stylist that wants to make you feel like your best self more than she
-	    		wants a profit. You can tell Haley does hair because she genuinely loves it, loves people, and she is honestly such a down
-	    		to earth person. She yearns to exceed your expectations and that which she has of herself. You really couldn't ask for
-	    		more in someone who you're trusting with your head of hair!! And it's a cute little salon overall, clean and well designed :)</p>
-	    		<i class="fa fa-quote-right col offset-s4" aria-hidden="true"></i><h3> - Caitlin</h3>
-    		</div>
-   		</div>
-
-      <div class="col s12 m6 l4">
-      	<div class="col s6 offset-s3 m6 offset-m2 l4 offset-l3">
-      		<img src="assets/images/ronnie.JPG" class="circle responsive-img">
-      	</div>
-      	<div class="col s12">
-	    		<p class="flow-text">Shoutout to Haley who works at this salon. I've been going to different people since I moved here a
-	    		little over a year ago and I will continue to go to her because she's amazing. She's kind, attentive, and genuinely loves
-	    		to do hair. 10/10 would recommend this lovely lady!</p>
-	    		<i class="fa fa-quote-right col offset-s4" aria-hidden="true"></i><h3> - Ronnie</h3>
-    		</div>
-   		</div>
-
-      <div class="col s12 m6 l4">
-      	<div class="col s6 offset-s3 m6 offset-m2 l4 offset-l3">
-      		<img src="assets/images/pam.JPG" class="circle responsive-img">
-      	</div>
-      	<div class="col s12">
-	    		<p class="flow-text">A skilled colorist and stylist. An artist with the patience and finesse to handle the most stubborn
-	    		of hair types. And a wonderful, caring person. Yup, I'm describing Haley Staack. I was never happier with my hair than when
-	    		she was my stylist - be it a bold and bright highlight job or even an angled bob. When I got married, there was no other
-	    		person I would consider touching my hair. And she managed to not only give me the updo of my dreams, but she curled my ultra
-	    		straight hair and stayed with me until the ceremony to make sure it looked perfect as I walked down the aisle. Your best
-	    		decision will be trusting Haley with your hair. She is the best, Tennessee!</p>
-	    		<i class="fa fa-quote-right col offset-s4" aria-hidden="true"></i><h3> - Pam</h3>
-    		</div>
-   		</div>
-		</div>
-
-	<!--end of parrallax-->
-	</div>
-
-  <div class="parallax-container">
     <div class="parallax"><img class="backgroundImages" src="assets/images/photography.JPG"></div>
   </div>
 
@@ -190,8 +73,8 @@
     <div class="row container">
       <h2 class="header">photography</h2>
       <h5 class="grey-text text-darken-3 lighten-3">since 2012</h5>
-      <p class="flow-text">I am also a photographer and have been freelancing for over 5 years. I photograph weddings, engagements,
-      family sessions, maternity, musicians, and have helped add to modeling portfolios for women who went on to model. I enjoy
+      <p class="flow-text">
+		  I photograph weddings, engagements, family sessions, maternity, musicians, and have helped add to modeling portfolios for women who went on to model. I enjoy
       capturing special moments for people to relive the rest of their lives. <a class="modal-trigger" href="#modal">Contact </a>me
       for prices and more information regarding booking a photo shoot session!</p>
 
@@ -204,8 +87,7 @@
 
 	<div class="row">
 		<div class="col s12 l8 offset-l2">
-			<p class="flow-text">If you would like to get an estimate for any hair or photography services please send me a message and include
-			what you would like to achieve.  I will get back with you as soon as I can, thank you!</p>
+			<p class="flow-text">If you would like to inquire about photography services please send me a message.  I will get back with you as soon as I can, thank you!</p>
 		</div>
 	</div>
 
@@ -231,9 +113,10 @@
 	<div id="modal" class="modal">
     <div class="modal-content">
       <h4>How to Contact Me</h4>
-      <p class="flow-text">You can get a hold of me through one of my social media links.  Just send me a direct message
-      on facebook, instagram or twitter.  You could also email me the old fashioned way.  While you're at it
-      give me a follow!</p>
+      <p class="flow-text">
+		  You can get a hold of me through one of my social media links.  
+		  Just send me a direct message on instagram or twitter.  While you're at it give me a follow!
+		</p>
     </div>
     <div class="modal-footer">
       <div class="fixed-action-btn toolbar">
@@ -241,10 +124,8 @@
       <i class="large material-icons">apps</i>
     </a>
     <ul>
-      <li class="waves-effect waves-light"><a href="https://www.facebook.com/hairbyhaleystaack/" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
-      <li class="waves-effect waves-light"><a href="https://www.instagram.com/hairbyhaleystaack/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+      <li class="waves-effect waves-light"><a href="https://www.instagram.com/photosbyhps/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
       <li class="waves-effect waves-light"><a href="https://twitter.com/NerdCaptnHaley" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
-      <li class="waves-effect waves-light"><a href="https://mail.google.com/mail/?view=cm&ui=2&tf=0&fs=1&to=hpshairandphotos%40gmail.com&su=I would like more info" target="_blank"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
     </ul>
   		</div>
 		</div>
