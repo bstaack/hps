@@ -11,6 +11,9 @@ $(document).ready(function() {
     $.post($form.attr('action'), $form.serialize()).then(function() {
       $('.form-container').hide('slow');
       $('.thank-you').show('slow');
+			
+      gtag('event', 'conversion', {'send_to': 'AW-10870091583/KL2DCJLiiLYDEL_eob8o'});
+
     });
   });
 
