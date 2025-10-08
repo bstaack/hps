@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Readings - Haley Staack</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="assets/favicon_io/site.webmanifest">
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-104060065-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Ads: 10870091583 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10870091583"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);} 
+			gtag('js', new Date());
+			gtag('config', 'AW-10870091583');
+		</script>
+
+		<style>
+			/* Page-scoped theme for Readings */
+			body.readings-theme {
+				/* Deeper, darker gradient. No background image. */
+				background-color: #120f1a;
+				background-image: radial-gradient(1200px 600px at 50% 10%, rgba(54, 33, 77, 0.35), rgba(18, 15, 26, 0.95)),
+					linear-gradient(to top, rgba(10, 8, 14, 0.9), rgba(22, 16, 32, 0.9));
+			}
+			body.readings-theme #header {
+				background-color: rgba(40, 28, 56, 0.85);
+			}
+			body.readings-theme #wrapper > header {
+				/* Mystic header gradient, no image */
+				background-image: linear-gradient(135deg, rgba(72, 48, 104, 0.75), rgba(20, 12, 32, 0.85));
+			}
+			/* Footer override: remove template background image and darken */
+			body.readings-theme #footer {
+				background-color: #15101f;
+				background-image: none !important;
+			}
+			/* Ornamental section headings */
+			body.readings-theme h3.major, body.readings-theme h2 {
+				letter-spacing: 0.15em;
+			}
+			body.readings-theme h3.major:after {
+				content: "\272A\00A0\00A0\272E\00A0\00A0\272A"; /* sparkle, star */
+				display: block;
+				margin-top: 0.6em;
+				font-size: 0.9em;
+				color: #c6b3ff;
+			}
+			/* Accent boxes */
+			body.readings-theme .box {
+				background: rgba(255,255,255,0.015);
+				border-color: rgba(198, 179, 255, 0.18);
+			}
+			/* Themed links and accents */
+			body.readings-theme a.special:not(.button):before,
+			body.readings-theme .button.primary {
+				border-color: rgba(198, 179, 255, 0.35);
+			}
+			/* Inline image treatments */
+			body.readings-theme .image.left img,
+			body.readings-theme .image.right img {
+				filter: saturate(0.9) contrast(1.05);
+			}
+			/* Decorative divider */
+			body.readings-theme .divider {
+				margin: 2.5em 0;
+				text-align: center;
+				color: #bda6ff;
+				opacity: 0.8;
+			}
+			body.readings-theme .divider:before,
+			body.readings-theme .divider:after {
+				content: '';
+				display: inline-block;
+				width: 24%;
+				height: 2px;
+				background: linear-gradient(90deg, rgba(189,166,255,0), rgba(189,166,255,0.7), rgba(189,166,255,0));
+				vertical-align: middle;
+			}
+			body.readings-theme .divider span {
+				margin: 0 0.75em;
+				font-size: 0.9em;
+			}
+			/* Notification callout */
+			body.readings-theme .notification {
+				position: absolute;
+				top: 2em;
+				right: 0;
+				width: 280px;
+				background: linear-gradient(135deg, rgba(198, 179, 255, 0.15), rgba(120, 80, 160, 0.2));
+				border: 2px solid rgba(198, 179, 255, 0.4);
+				border-radius: 12px;
+				padding: 1.5em;
+				box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+				backdrop-filter: blur(10px);
+				z-index: 10;
+			}
+			body.readings-theme .notification h4 {
+				margin: 0 0 0.5em 0;
+				color: #e6d7ff;
+				font-size: 1.1em;
+				text-align: center;
+			}
+			body.readings-theme .notification p {
+				margin: 0 0 1em 0;
+				font-size: 0.9em;
+				line-height: 1.4;
+			}
+			body.readings-theme .notification .button {
+				width: 100%;
+				text-align: center;
+			}
+			@media screen and (max-width: 980px) {
+				body.readings-theme .notification {
+					position: static;
+					width: 100%;
+					margin: 1em 0;
+				}
+			}
+			/* Layout helpers for this page */
+			body.readings-theme .section-block { overflow: hidden; }
+			body.readings-theme .image.left { max-width: 40%; }
+			body.readings-theme .image.right { max-width: 40%; }
+			body.readings-theme .clear { clear: both; }
+			@media screen and (max-width: 980px) {
+				body.readings-theme .image.left,
+				body.readings-theme .image.right {
+					float: none;
+					max-width: 100%;
+					margin: 0 0 1.25em 0;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload readings-theme">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Haley Staack</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="readings.html">Readings</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Readings</h2>
+								<p>In person, video, or phone call readings, plus magickal work on request.</p>
+								<span class="image fit"><img src="assets/images/readings/readings4.jpeg" alt="Herbs and charms" /></span>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="section-block">
+										<h3 class="major">Bio</h3>
+										<a href="#" class="image left"><img src="assets/images/readings/readings1.jpeg" alt="Candles and tarot" /></a>
+										<p>
+										Haley Staack, originally from the Appalachian region, haunts the hills of East Tennessee. Her magick is rooted in Appalachian folk practices and learning the art of conjure. She enjoys her simple life; connecting with the Land, remembering the old ways, and helping others connect to other realms and loved ones crossed as an Evidential/Spirit Medium. Haley loves to explore haunted places, giving the spirits a chance to tell their story. What started as one haunted clown doll lead to Haley becoming a Haunted Collector to give haunted objects a safe space to just “be”. Haley can most often be found amongst her flowers and gardens, and the spirits of the woods, as they share secrets and messages with her. Haley knows her deepest calling is to help others heal, so whether through her magick, digging and foraging from the dirt, or in her mediumship readings, she knows helping other’s heal and see the magick in themselves is pivotal.
+										</p>
+									</div>
+									<div class="divider"><span>✦ ✶ ✦</span></div>
+
+									<div class="section-block">
+										<h3 class="major">Readings</h3>
+										<a href="#" class="image right"><img src="assets/images/readings/readings2.jpeg" alt="Oracle deck" /></a>
+										<p>In person / video / phone call:</p>
+									<ul>
+										<li><strong>25 minute reading</strong> - $35
+											<ul>
+												<li>with <strong>Magickal Charms</strong> - $60</li>
+											</ul>
+										</li>
+										<li><strong>50 minute reading</strong> - $60
+											<ul>
+												<li>with <strong>Magickal Charms</strong> - $85</li>
+											</ul>
+										</li>
+									</ul>
+
+									<h4>Magickal Charms</h4>
+									<p>
+										After having a reading done, I can curate personal spells to aid you specifically in the goals and forward movement from the reading. Each charm box is carefully crafted with intention and includes everything you need to begin your magickal work.
+									</p>
+									<p>
+										<strong>What's included:</strong> Hand-poured candles, crystal-infused charm bags, ritual herbs, written instructions, and personalized guidance for your specific situation. Each item is charged with intention and ready for you to utilize when the time feels right.
+									</p>
+									<p>
+										These charms are designed to support the insights and guidance received during your reading, helping you manifest positive change and move forward on your spiritual path with confidence and clarity.
+									</p>
+									</div>
+									<div class="divider"><span>☾ ✧ ☽</span></div>
+
+									<div class="section-block">
+										<h3 class="major">Spell Work</h3>
+										<span class="image main"><img src="assets/images/readings/readings3.jpeg" alt="Spell work altar" /></span>
+										<p>
+											Please send a message if you are seeking to inquire about your personal spellwork, need to discuss magick, or seeking spellwork to be crafted for you. We will further discuss any financial details there, if even required.
+										</p>
+									</div>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>If you would like to inquire about readings or spell work, please send me a message. I will get back with you as soon as I can, thank you!</p>
+							<form class="form-container" name="contact" method="POST" id="contact-form" netlify-honeypot="phone" netlify>
+								<input name="phone" type="hidden" />
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input name="name" type="text" placeholder="Name" required />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input name="email" type="email" placeholder="Email" required />
+									</div>
+									<div class="field">
+										<label for="text">Message</label>
+										<textarea name="text" placeholder="Message" required></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Submit" /></li>
+								</ul>
+							</form>
+							<p class="thank-you" style="display:none;">
+								Thank You! We will be in touch soon!
+							</p>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									East Tennessee
+								</li>
+								<li class="icon brands fa-twitter"><a href="https://twitter.com/NerdCaptnHaley" target="_blank">twitter.com/NerdCaptnHaley</a></li>
+								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/photosbyhps/" target="_blank">instagram.com/photosbyhps</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+

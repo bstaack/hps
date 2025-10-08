@@ -39,6 +39,45 @@
 			gtag('config', 'AW-10870091583');
 		</script>
 
+		<style>
+			/* Homepage notification styling */
+			#banner .notification {
+				position: absolute;
+				top: 2em;
+				right: 2em;
+				width: 300px;
+				background: linear-gradient(135deg, rgba(198, 179, 255, 0.2), rgba(120, 80, 160, 0.25));
+				border: 2px solid rgba(198, 179, 255, 0.5);
+				border-radius: 12px;
+				padding: 1.5em;
+				box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+				backdrop-filter: blur(10px);
+				z-index: 10;
+			}
+			#banner .notification h4 {
+				margin: 0 0 0.5em 0;
+				color: #e6d7ff;
+				font-size: 1.1em;
+				text-align: center;
+			}
+			#banner .notification p {
+				margin: 0 0 1em 0;
+				font-size: 0.9em;
+				line-height: 1.4;
+			}
+			#banner .notification .button {
+				width: 100%;
+				text-align: center;
+			}
+			@media screen and (max-width: 980px) {
+				#banner .notification {
+					position: static;
+					width: 100%;
+					margin: 1em 0;
+				}
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -54,6 +93,11 @@
 					<section id="banner">
 						<div class="inner">
 							<a href="#" class="image"><img style="border-radius: 100%;" src="images/self.jpg" alt="" /></a>
+							<div class="notification">
+								<h4>✨ Spiritual Readings Available ✨</h4>
+								<p>Beyond photography, I offer spiritual readings and mediumship sessions to help you connect with loved ones and discover your path.</p>
+								<a href="readings.html" class="button primary">Explore Readings</a>
+							</div>
 							<div class="content">
 								<h2 class="major"><i class="fas fa-camera-retro"></i> Haley Staack</h2>
 								<p>
@@ -147,6 +191,21 @@
 							</div>
 						</section>
 
+					</section>
+
+				<!-- Readings Promotion -->
+					<section id="readings-promo" class="wrapper spotlight style4">
+						<div class="inner">
+							<div class="content">
+								<h2 class="major"><i class="fas fa-moon"></i> Spiritual Readings & Magickal Work</h2>
+								<p>
+									Beyond photography, I offer spiritual readings and mediumship sessions to help you connect with loved ones crossed over, 
+									explore your path forward, and discover the magick within yourself. Whether you're seeking guidance, healing, or 
+									personal spellwork, I'm here to help you on your journey.
+								</p>
+								<a href="readings.html" class="special">Explore Readings & Magick</a>
+							</div>
+						</div>
 					</section>
 
 				<!-- Footer -->
