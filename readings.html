@@ -146,6 +146,44 @@
 			body.readings-theme .image.left { max-width: 40%; }
 			body.readings-theme .image.right { max-width: 40%; }
 			body.readings-theme .clear { clear: both; }
+			/* Reviews */
+			body.readings-theme .review {
+				position: relative;
+				margin: 0 0 2em 0;
+				padding: 2em 2em 1.5em 2em;
+				border: 2px solid rgba(198, 179, 255, 0.18);
+				border-left: 4px solid rgba(198, 179, 255, 0.5);
+				border-radius: 8px;
+				background: linear-gradient(135deg, rgba(198, 179, 255, 0.06), rgba(120, 80, 160, 0.08));
+				font-style: normal;
+			}
+			body.readings-theme .review:before {
+				content: "\201C";
+				position: absolute;
+				top: 0.1em;
+				left: 0.35em;
+				font-size: 3.5em;
+				line-height: 1;
+				color: rgba(198, 179, 255, 0.35);
+				font-family: Georgia, serif;
+			}
+			body.readings-theme .review p {
+				font-style: italic;
+				margin-bottom: 1em;
+			}
+			body.readings-theme .review footer {
+				text-align: right;
+				color: #c6b3ff;
+				letter-spacing: 0.1em;
+			}
+			body.readings-theme .review footer:before {
+				content: "\2014\00A0";
+			}
+			@media screen and (max-width: 736px) {
+				body.readings-theme .review {
+					padding: 1.75em 1.25em 1.25em 1.5em;
+				}
+			}
 			@media screen and (max-width: 980px) {
 				body.readings-theme .image.left,
 				body.readings-theme .image.right {
@@ -268,6 +306,23 @@
 										<p>
 											Please send a message if you are seeking to inquire about your personal spellwork, need to discuss magick, or seeking spellwork to be crafted for you. We will further discuss any financial details there, if even required.
 										</p>
+									</div>
+									<div class="divider"><span>✦ ✶ ✦</span></div>
+
+									<div class="section-block" id="reviews">
+										<h3 class="major">Reviews</h3>
+										<blockquote class="review">
+											<p>
+												I went in a friendly skeptic with a very Googleable life, and she still hit on things that weren't online. What surprised me was how the tarot, chakra insights, even the insect spirits, all pointed to similar themes without feeling forced. It was like, "okay, that's oddly consistent." Then the follow up to make sure I understood everything... chef's kiss 👌
+											</p>
+											<p>
+												She kept it grounded, respectful, and never pushy. Just thoughtful, sometimes eerily accurate, and way more "wait, what?" moments than I expected.
+											</p>
+											<p>
+												I'd recommend Haley for anyone. Whether you're a die-hard skeptic with a spreadsheet of doubts, or the friend who already owns 3 decks and a crystal for every day of the week, she meets you where you are and knocks it out of the park.
+											</p>
+											<footer>Larry</footer>
+										</blockquote>
 									</div>
 
 								</div>
