@@ -3340,6 +3340,77 @@ input, select, textarea {
 						background: #45558d;
 					}
 
+				#menu .links li .submenu-toggle {
+					background: transparent;
+					border-radius: 5px;
+					box-shadow: none;
+					display: block;
+					font-family: Raleway, Helvetica, sans-serif;
+					font-size: 0.8em;
+					font-weight: 200;
+					height: auto;
+					letter-spacing: 0.1em;
+					line-height: 1.85em;
+					padding: 0.75em 0;
+					text-transform: uppercase;
+					width: 100%;
+				}
+
+					#menu .links li .submenu-toggle:after {
+						border-bottom: solid 1px currentColor;
+						border-right: solid 1px currentColor;
+						content: '';
+						display: inline-block;
+						height: 0.45em;
+						margin-left: 0.75em;
+						-moz-transform: translateY(-0.2em) rotate(45deg);
+						-webkit-transform: translateY(-0.2em) rotate(45deg);
+						-ms-transform: translateY(-0.2em) rotate(45deg);
+						transform: translateY(-0.2em) rotate(45deg);
+						-moz-transition: -moz-transform 0.2s ease;
+						-webkit-transition: -webkit-transform 0.2s ease;
+						-ms-transition: -ms-transform 0.2s ease;
+						transition: transform 0.2s ease;
+						vertical-align: middle;
+						width: 0.45em;
+					}
+
+					#menu .links li .submenu-toggle:hover {
+						background: #45558d;
+					}
+
+				#menu .links li.is-open > .submenu-toggle:after {
+					-moz-transform: translateY(0.1em) rotate(-135deg);
+					-webkit-transform: translateY(0.1em) rotate(-135deg);
+					-ms-transform: translateY(0.1em) rotate(-135deg);
+					transform: translateY(0.1em) rotate(-135deg);
+				}
+
+				#menu .links .submenu {
+					background: rgba(0, 0, 0, 0.1);
+					border-radius: 5px;
+					list-style: none;
+					margin: 0;
+					max-height: 0;
+					overflow: hidden;
+					padding: 0;
+					-moz-transition: max-height 0.35s ease, visibility 0.35s;
+					-webkit-transition: max-height 0.35s ease, visibility 0.35s;
+					-ms-transition: max-height 0.35s ease, visibility 0.35s;
+					transition: max-height 0.35s ease, visibility 0.35s;
+					visibility: hidden;
+				}
+
+					#menu .links .submenu li a {
+						font-size: 0.7em;
+						padding: 0.5em 0;
+					}
+
+				#menu .links li.is-open > .submenu {
+					max-height: 20em;
+					visibility: visible;
+				}
+
 		@media screen and (max-width: 736px) {
 
 			#menu .inner {

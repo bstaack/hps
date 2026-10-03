@@ -213,7 +213,16 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
+								<li class="has-submenu">
+									<button type="button" class="submenu-toggle" aria-expanded="false" aria-controls="gallery-submenu">Gallery</button>
+									<ul class="submenu" id="gallery-submenu">
+										<li><a href="gallery.html?folder=wedding">Weddings</a></li>
+										<li><a href="gallery.html?folder=portraits">Portraits</a></li>
+										<li><a href="gallery.html?folder=family">Family</a></li>
+										<li><a href="gallery.html?folder=couples">Couples</a></li>
+										<li><a href="gallery.html?folder=other">Other</a></li>
+									</ul>
+								</li>
 								<li><a href="readings.html">Readings</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>

@@ -116,6 +116,19 @@
 				.on('click', function(event) {
 					event.stopPropagation();
 				})
+				.on('click', '.submenu-toggle', function(event) {
+
+					var $toggle = $(this),
+						$item = $toggle.parent(),
+						isOpen = !$item.hasClass('is-open');
+
+					event.preventDefault();
+
+					// Expand/collapse.
+						$item.toggleClass('is-open', isOpen);
+						$toggle.attr('aria-expanded', isOpen ? 'true' : 'false');
+
+				})
 				.on('click', 'a', function(event) {
 
 					var href = $(this).attr('href');
