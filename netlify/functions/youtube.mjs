@@ -4,8 +4,8 @@
 
 const HANDLE = "TheWitchontheRidge";
 
-// Optional: paste the channel's "UC..." id here to skip looking it up from the handle.
-const CHANNEL_ID = "";
+// The channel's "UC..." id. If cleared, it's looked up from HANDLE instead.
+const CHANNEL_ID = "UCviZzLHByPfYAZ0lB-06NlQ";
 
 const YT_HEADERS = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
