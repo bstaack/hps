@@ -19,6 +19,7 @@
 		<link rel="manifest" href="assets/favicon_io/site.webmanifest">
 	
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/youtube-feed.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<script>
@@ -78,6 +79,22 @@
 					width: 100%;
 					margin: 1em 0;
 				}
+			}
+
+			/* YouTube section */
+			#youtube {
+				background-color: #2b2440;
+			}
+			#youtube:before, #youtube:after {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232b2440%3B' /%3E%3C/svg%3E");
+				box-shadow: inset 0 -1px 0 0 #2b2440, 0 1px 0 0 #2b2440;
+			}
+			#youtube .tagline {
+				color: #c6b3ff;
+				font-size: 0.8em;
+				letter-spacing: 0.15em;
+				text-transform: uppercase;
+				margin: -1em 0 1.5em 0;
 			}
 		</style>
 
@@ -211,6 +228,22 @@
 						</div>
 					</section>
 
+				<!-- YouTube -->
+					<section id="youtube" class="wrapper alt">
+						<div class="inner">
+							<h2 class="major"><i class="fab fa-youtube"></i> The Witch on the Ridge</h2>
+							<p class="tagline">Folk Magic &#9661; Spirit Medium &#9651; Plants &#9661; Appalachian</p>
+							<p>
+								Come sit a spell with me on YouTube! I share my folk magic, spirit work, and plant knowledge,
+								plus a little Appalachian lore from up here on the ridge.
+							</p>
+							<div class="yt-feed" data-youtube-feed></div>
+							<ul class="actions">
+								<li><a href="https://www.youtube.com/@TheWitchontheRidge?sub_confirmation=1" class="button primary icon brands fa-youtube" target="_blank">Subscribe on YouTube</a></li>
+							</ul>
+						</div>
+					</section>
+
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
@@ -247,6 +280,7 @@
 								<!-- <li class="icon solid fa-envelope"><a href="#" target="_blank">information@untitled.tld</a></li> -->
 								<li class="icon brands fa-twitter"><a href="https://twitter.com/NerdCaptnHaley" target="_blank">twitter.com/NerdCaptnHaley</a></li>
 								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/thewitchontheridge/" target="_blank">instagram.com/thewitchontheridge</a></li>
+								<li class="icon brands fa-youtube"><a href="https://www.youtube.com/@TheWitchontheRidge" target="_blank">youtube.com/@TheWitchontheRidge</a></li>
 							</ul>
 						</div>
 					</section>
@@ -260,6 +294,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/youtube-feed.js"></script>
 
 	</body>
 </html>
