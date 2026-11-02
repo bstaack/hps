@@ -44,43 +44,6 @@
 		</script>
 
 		<style>
-			/* Homepage notification styling */
-			#banner .notification {
-				position: absolute;
-				top: 2em;
-				right: 2em;
-				width: 300px;
-				background: linear-gradient(135deg, rgba(198, 179, 255, 0.2), rgba(120, 80, 160, 0.25));
-				border: 2px solid rgba(198, 179, 255, 0.5);
-				border-radius: 12px;
-				padding: 1.5em;
-				box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-				backdrop-filter: blur(10px);
-				z-index: 10;
-			}
-			#banner .notification h4 {
-				margin: 0 0 0.5em 0;
-				color: #e6d7ff;
-				font-size: 1.1em;
-				text-align: center;
-			}
-			#banner .notification p {
-				margin: 0 0 1em 0;
-				font-size: 0.9em;
-				line-height: 1.4;
-			}
-			#banner .notification .button {
-				width: 100%;
-				text-align: center;
-			}
-			@media screen and (max-width: 980px) {
-				#banner .notification {
-					position: static;
-					width: 100%;
-					margin: 1em 0;
-				}
-			}
-
 			/* YouTube section */
 			#youtube {
 				background-color: #2b2440;
@@ -95,6 +58,37 @@
 				letter-spacing: 0.15em;
 				text-transform: uppercase;
 				margin: -1em 0 1.5em 0;
+			}
+			/* Readings photos aren't square: crop them to circles */
+			.wrapper.spotlight .image img {
+				aspect-ratio: 1 / 1;
+				object-fit: cover;
+				display: block;
+			}
+
+			/* Banner subtitle */
+			#banner .subtitle {
+				color: #c6b3ff;
+				letter-spacing: 0.2em;
+				margin: -0.5em 0 1.5em 0;
+			}
+
+			/* Small "also does photography" strip */
+			#photography-note {
+				background-color: #241f33;
+				padding: 2.5em 0;
+				text-align: center;
+			}
+			#photography-note .inner {
+				padding: 0 2em;
+			}
+			#photography-note p {
+				margin: 0;
+				font-size: 0.95em;
+			}
+			#photography-note i {
+				color: #c6b3ff;
+				margin-right: 0.5em;
 			}
 		</style>
 
@@ -112,120 +106,85 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<a href="#" class="image"><img style="border-radius: 100%;" src="images/self.jpg" alt="" /></a>
-							<div class="notification">
-								<h4>✨ Spiritual Readings Available ✨</h4>
-								<p>Beyond photography, I offer spiritual readings and mediumship sessions to help you connect with loved ones and discover your path.</p>
-								<a href="readings.html" class="button primary">Explore Readings</a>
-							</div>
+							<a href="readings.html" class="image"><img style="border-radius: 100%;" src="images/self.jpg" alt="Haley Staack" /></a>
 							<div class="content">
-								<h2 class="major"><i class="fas fa-camera-retro"></i> Haley Staack</h2>
+								<h2 class="major"><i class="fas fa-moon"></i> Haley Staack</h2>
+								<p class="subtitle">Evidential Spirit Medium &#9670; Appalachian Folk Magick</p>
 								<p>
-									I'm Haley, the human behind the lens! I am originally from the Appalachian 
-									Mountains of North Carolina, and I have found myself back in them in East 
-									Tennessee with my husband and our three fur children. We prefer a simple life, 
-									but also love the excitement of travel. In my spare time, I love to hike, 
-									advance my knowledge of herbalism, and paranormal investigate! Welcome to my 
-									page, let me show YOU the beauty that I see when I look at you!
+									Rooted in the hills of East Tennessee, I help others connect with loved ones who have
+									crossed over, find clarity on the path ahead, and see the magick in themselves.
+									Readings are available in person, by video, or by phone.
 								</p>
+								<ul class="actions">
+									<li><a href="readings.html" class="button primary">Book a Reading</a></li>
+								</ul>
 							</div>
 						</div>
 					</section>
 
 				<!-- Wrapper -->
 					<section id="wrapper">
-						<!-- wedding -->
+						<!-- Readings -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="gallery.html?folder=wedding" class="image"><img src="images/wedding.jpg" alt="" /></a>
+									<a href="readings.html#readings" class="image"><img src="assets/images/readings/readings2.jpeg" alt="Oracle deck" /></a>
 									<div class="content">
-										<h2 class="major">Weddings</h2>
+										<h2 class="major">Readings</h2>
 										<p>
-											I love photographing weddings, I find joy in capturing the memories for you that will help you always 
-											remember magical day that it was. I've photographed weddings in Tennessee, Florida, South Carolina, 
-											North Carolina, and in the amazing Canadian Rockies. I'm always down for traveling to where ever it 
-											is you choose to celebrate your love with each other.
+											Mediumship and tarot readings in person, by video, or over the phone. 25 minute readings
+											start at $35 and 50 minute readings at $60, with personalized Magickal Charms available
+											to carry the work forward. Need quick guidance? Try a five card Clarifying Tarot Pull for $15.
 										</p>
-										<a href="gallery.html?folder=wedding" class="special">View Weddings</a>
+										<a href="readings.html#readings" class="special">Readings & Pricing</a>
 									</div>
 								</div>
 							</section>
 
-						<!-- portraits -->
+						<!-- Seances -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="gallery.html?folder=portraits" class="image"><img src="images/portraits.jpg" alt="" /></a>
+									<a href="readings.html#seances" class="image"><img src="assets/images/readings/readings1.jpeg" alt="Candles and tarot" /></a>
 									<div class="content">
-										<h2 class="major">Portraits</h2>
-										<p>I know everyone loves a good portrait of themselves, don't deny it!</p>
-										<a href="gallery.html?folder=portraits" class="special">View Portraits</a>
+										<h2 class="major">Seances</h2>
+										<p>
+											Intimate group seances for up to 10 people: a safe and sacred space to connect with the
+											spirit world together. Whether you're seeking closure or simply curious about the other side.
+										</p>
+										<a href="readings.html#seances" class="special">About Seances</a>
 									</div>
 								</div>
 							</section>
 
-						<!-- family -->
+						<!-- Spell work -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="gallery.html?folder=family" class="image"><img src="images/family.jpg" alt="" /></a>
+									<a href="readings.html#spell-work" class="image"><img src="assets/images/readings/readings3.jpeg" alt="Spell work altar" /></a>
 									<div class="content">
-										<h2 class="major">Family</h2>
+										<h2 class="major">Spell Work</h2>
 										<p>
-											Families are constantly growing and changing, let's capture those moments you want to remember before 
-											they pass right by. I'll make sure you have beautiful memories of all the stages of life you go through.
+											Personal spellwork crafted with intention, rooted in Appalachian folk practice and conjure.
+											Reach out to talk magick or to have something made just for you.
 										</p>
-										<a href="gallery.html?folder=family" class="special">View Families</a>
+										<a href="readings.html#spell-work" class="special">About Spell Work</a>
 									</div>
 								</div>
 							</section>
-						
-						<!-- couples -->
-						<section id="four" class="wrapper alt spotlight style2">
-							<div class="inner">
-								<a href="gallery.html?folder=couples" class="image"><img src="images/couples.jpg" alt="" /></a>
-								<div class="content">
-									<h2 class="major">Couples</h2>
-									<p>
-										I love watching couples interact for photos. You get to see them for how they truly are, the love and chemistry 
-										created between them. I'll have you dancing in the forest, sharing sweet kisses in the meadows, or skipping your way 
-										through downtown. Let me capture your love!
-									</p>
-									<a href="gallery.html?folder=couples" class="special">View Couples</a>
+
+						<!-- Wedding reception readings -->
+							<section id="four" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="readings.html#wedding-readings" class="image"><img src="assets/images/readings/readings4.jpeg" alt="Herbs and charms" /></a>
+									<div class="content">
+										<h2 class="major">Wedding Reception Readings</h2>
+										<p>
+											Add a little magick to your celebration. I'll set up at your reception and offer readings
+											to your guests, a unique and memorable experience for them to carry home.
+										</p>
+										<a href="readings.html#wedding-readings" class="special">Learn More</a>
+									</div>
 								</div>
-							</div>
-						</section>
+							</section>
 
-						<!-- Five -->
-						<section id="five" class="wrapper spotlight style3">
-							<div class="inner">
-								<a href="gallery.html?folder=other" class="image"><img src="images/other.jpg" alt="" /></a>
-								<div class="content">
-									<h2 class="major">Other</h2>
-									<p>
-										Themed photoshoots are my happy place. Planning out and capturing creative ideas fuels my artistic heart. 
-										I also adore boudoir sessions, for your significant other OR to remind yourself of the bad ass that you are. 
-										And of course, I'm an earthy girl... I love a good nature shot. I'm also ALWAYS available to photograph your animals, 
-										ALWAYS.
-									</p>
-									<a href="gallery.html?folder=other" class="special">View Other</a>
-								</div>
-							</div>
-						</section>
-
-					</section>
-
-				<!-- Readings Promotion -->
-					<section id="readings-promo" class="wrapper spotlight style4">
-						<div class="inner">
-							<div class="content">
-								<h2 class="major"><i class="fas fa-moon"></i> Spiritual Readings & Magickal Work</h2>
-								<p>
-									Beyond photography, I offer spiritual readings and mediumship sessions to help you connect with loved ones crossed over, 
-									explore your path forward, and discover the magick within yourself. Whether you're seeking guidance, healing, or 
-									personal spellwork, I'm here to help you on your journey.
-								</p>
-								<a href="readings.html" class="special">Explore Readings & Magick</a>
-							</div>
-						</div>
 					</section>
 
 				<!-- YouTube -->
@@ -244,11 +203,18 @@
 						</div>
 					</section>
 
+				<!-- Photography -->
+					<section id="photography-note">
+						<div class="inner">
+							<p><i class="fas fa-camera-retro"></i>I'm also a photographer! Weddings, portraits, families, couples &amp; more. <a href="photography.html">View my photography &rarr;</a></p>
+						</div>
+					</section>
+
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<p>If you would like to inquire about photography services please send me a message.  I will get back with you as soon as I can, thank you!</p>
+							<p>If you would like to book a reading or seance, inquire about spell work, or ask about photography, please send me a message. I will get back with you as soon as I can, thank you!</p>
 							<form class="form-container" name="contact" method="POST" id="contact-form" netlify-honeypot="phone" netlify>
 								<input name="phone" type="hidden" />
 								<div class="fields">
